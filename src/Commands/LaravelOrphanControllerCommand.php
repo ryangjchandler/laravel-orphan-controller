@@ -67,7 +67,7 @@ class LaravelOrphanControllerCommand extends Command
         $this->comment('Found ' . $orphans->count() . ' orphaned controllers.');
 
         $this->table([
-            'Class', 'Method'
+            'Class', 'Method',
         ], $orphans->mapWithKeys(function (array $action) {
             return [[
                 'Class' => $action[0],
