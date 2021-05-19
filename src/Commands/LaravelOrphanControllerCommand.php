@@ -64,7 +64,7 @@ class LaravelOrphanControllerCommand extends Command
             return 0;
         }
 
-        $this->comment('Found ' . $orphans->count() . ' orphaned controllers.');
+        $this->comment('Found ' . $orphans->count() . ' orphaned ' . Str::plural('controller', $orphans->count()) . '.');
 
         $this->table([
             'Class', 'Method'
