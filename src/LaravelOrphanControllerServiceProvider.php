@@ -2,9 +2,9 @@
 
 namespace RyanChandler\LaravelOrphanController;
 
+use RyanChandler\LaravelOrphanController\Commands\LaravelOrphanControllerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RyanChandler\LaravelOrphanController\Commands\LaravelOrphanControllerCommand;
 
 class LaravelOrphanControllerServiceProvider extends PackageServiceProvider
 {
