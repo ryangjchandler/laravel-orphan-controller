@@ -15,7 +15,7 @@ use SplFileInfo;
 
 class LaravelOrphanControllerCommand extends Command
 {
-    public $signature = 'orphan-controller:find';
+    public $signature = 'orphan-controller:find {--compact}';
 
     public $description = 'Search your application for controllers with no routes.';
 
@@ -73,7 +73,7 @@ class LaravelOrphanControllerCommand extends Command
                 'Class' => $action[0],
                 'Method' => $action[1],
             ]];
-        }));
+        }), $this->option('compact') ? 'compact' : 'default');
     }
 
     protected function loadRoutes()
