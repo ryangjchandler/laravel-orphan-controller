@@ -11,4 +11,5 @@ psalm.xml
 testbench.yaml
 vendor
 node_modules
+sink
 .php-cs-fixer.cache
