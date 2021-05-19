@@ -34,12 +34,12 @@ return [
 
 ## Usage
 
-This package provides a single Artisan command - `orphan-controllers:find`.
+This package provides a single Artisan command - `orphan-controller:find`.
 
 You can run this command in your terminal:
 
 ```bash
-php artisan orphan-controllers:find
+php artisan orphan-controller:find
 ```
 
 By default, it will look through each path inside of the `orphan-controller.paths` configuration value.
