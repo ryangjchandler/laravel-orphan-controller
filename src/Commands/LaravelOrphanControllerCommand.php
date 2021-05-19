@@ -36,7 +36,6 @@ class LaravelOrphanControllerCommand extends Command
 
     protected function hasRouteForAction(array $action)
     {
-
     }
 
     protected function getControllersInDirectory(string $directory)
