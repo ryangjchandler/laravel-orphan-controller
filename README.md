@@ -17,7 +17,7 @@ composer require ryangjchandler/laravel-orphan-controller --dev
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="RyanChandler\LaravelOrphanController\LaravelOrphanControllerServiceProvider" --tag="laravel-orphan-controller-config"
+php artisan vendor:publish --provider="RyanChandler\LaravelOrphanController\LaravelOrphanControllerServiceProvider" --tag="orphan-controller-config"
 ```
 
 This is the contents of the published config file:
